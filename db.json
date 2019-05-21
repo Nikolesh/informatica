@@ -1,0 +1,10 @@
+{
+    "user":{
+    "nome": "nicolò",
+    "cognome": "rossi",
+    "nikname": "niko",
+    "email": "niko@gmail.com",
+    "password": "sasso1",
+    "telefono": "123456"
+    }
+}

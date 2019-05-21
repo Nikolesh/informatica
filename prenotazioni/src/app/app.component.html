@@ -3,13 +3,20 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <body>
 <form>
-nome: <input type="text"><input>
-cognome: <input type="text"><input>
-indirizzo: <input type="text"><input>
-email: <input type="text"><input>
-telefono: <input type="text"><input>
-data prenotazione: <input type="text"><input>
-ora prenotazione: <input type="text"><input>
+  <h2>Prenota una visita</h2>
+nome: <input name="Nome" #newnome type="text"><br>
+cognome: <input name="Cognome" #newcognome type="text"><br>
+indirizzo: <input name="Indirizzo" #newindirizzo type="text"><br>
+email: <input name="Email" #newemail type="text"><br>
+telefono: <input name="Telefono" #newtelefono type="text"><br>
+data prenotazione: <input name="Data" #newdata type="date"><br>
+ora prenotazione: <input name="Ora" #newora type="time"><br>
+<button (click)="prenota(newnome, newcognome , newindirizzo , newtelefono , newemail , newdata , newora )">
+      Conferma
+    </button>
 </form>
+
+
+<app-foo [pren] = "prenotazione"> </app-foo>
 </body>
 </html>
