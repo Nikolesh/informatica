@@ -4,7 +4,7 @@
       <h2>LOGIN</h2>
       inserisci nikname:<input type="text" #nikname><br>
       inserisci password:<input type="text" #psw><br>
-      <button (Click)="log(nikname,psw)">login</button>
+      <button (Click)="log(nikname, psw)">login</button>
       <br>
       <br>
       <br>
@@ -15,8 +15,8 @@
       inserisci email:<input type="text" #email><br>
       inserisci password:<input type="text" #psw><br>
       inserisci telefono:<input type="text" #telefono><br>
-      <button (Click)="reg(nome,cognome,nikname,email,psw,telefono)">registrati</button>
+      <button (Click)="reg(nome, cognome, nikname, email, psw, telefono)">registrati</button>
     </form>
-    <div><app-userlist *ngFor="let p of utente"[utente] = "selectedPren"></app-userlist> </div>
+    <div><app-userlist *ngFor="let p of utente" [utente] = "p"></app-userlist> </div>
   </body>
 </html>
