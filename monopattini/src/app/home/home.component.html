@@ -1,0 +1,25 @@
+<div class="container">
+  <p>LOGIN</p>
+    <label ><b>Username</b></label> <br>
+    <input type="text" placeholder="Enter Username" #username required> <br>
+
+    <label ><b>Password</b></label> <br>
+    <input type="password" placeholder="Enter Password" #psw required> <br>
+
+    <button type="submit" (click)="login(username,psw)">Login</button>
+
+</div>
+<br><br>
+<div class="container">
+  <p>REGISTER</p>
+    <label ><b>Username</b></label> <br>
+    <input type="text" placeholder="Enter Username" #username required> <br>
+
+    <label ><b>Password</b></label> <br>
+    <input type="password" placeholder="Enter Password" #psw required> <br>
+
+    <button type="submit" (click)="signup(username,psw)">Invia</button>
+
+    {{msg}}
+
+</div>

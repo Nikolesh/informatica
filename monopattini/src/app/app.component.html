@@ -1,0 +1,3 @@
+<button (click)="logout()" *ngIf="loggato">esci</button>
+<app-home *ngIf="loggato==false"> </app-home>
+<app-visual *ngIf="loggato"> </app-visual>
